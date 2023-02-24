@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Navigation Bar Using Html Css and Javascript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <ul class="navigation">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Service</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Contact</a></li>
+        <span class="menutoggle"></span>
+    </ul>
+
+    <script>
+        let menutoggle = document.querySelector('.menutoggle');
+        let navigation = document.querySelector('.navigation');
+
+        menutoggle.onclick = function (){
+            navigation.classList.toggle('active');
+
+        }
+    </script>
+</body>
+</html>
